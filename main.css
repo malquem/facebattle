@@ -1,0 +1,19 @@
+div.entry-content {
+    width: 60%; /* Ширина слоя в пикселах */
+    margin: 0 auto; /* Отступ слева и справа */
+    background: #fc0; /* Цвет фона */
+    padding: 10px; /* Поля вокруг текста */
+    text-align: left; /* Выравнивание содержимого слоя по левому краю */
+    align-content: center;
+}
+
+.entry-content h1 {
+    text-align: center;
+}
+
+form {
+    margin: 0 auto;
+    width:400px;
+    padding: 10px;
+    border: skyblue solid 3px;
+}
