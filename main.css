@@ -122,3 +122,60 @@ h3 {
     color: #667777;
     font-weight: 700;
 }
+
+/* Intro */
+
+#intro {
+    text-align: center;
+    overflow: hidden;
+}
+
+#intro section {
+    margin: 3em 0;
+    padding: 2.5em 0;
+}
+
+#intro h2 {
+    font-size: 1.75em;
+}
+
+#intro p {
+    margin: 0;
+}
+
+#intro .middle {
+    position: relative;
+    z-index: 1;
+}
+
+#intro .middle:before {
+    content: '';
+    width: 32px;
+    height: 100%;
+    position: absolute;
+    left: -24px;
+    top: 0;
+    display: block;
+    z-index: -1;
+    box-shadow: 32px 0 0 0 #fff, 0 -32px 0 0 #fff, 0 32px 0 0 #fff, 32px 32px 0 0 #fff, 32px -32px 0 0 #fff, 0 0 32px 0 rgba(0, 0, 0, 0.15);
+}
+
+#intro .middle:after {
+    content: '';
+    width: 32px;
+    height: 100%;
+    position: absolute;
+    right: -24px;
+    top: 0;
+    display: block;
+    z-index: -1;
+    box-shadow: -32px 0 0 0 #fff, 0 -32px 0 0 #fff, 0 32px 0 0 #fff, -32px 32px 0 0 #fff, -32px -32px 0 0 #fff, 0 0 32px 0 rgba(0, 0, 0, 0.15);
+}
+
+#intro .button {
+    min-width: 12em;
+}
+
+#intro footer {
+    margin: 0;
+}
