@@ -2,7 +2,7 @@
 include 'header.php';
 ?>
 <section id="header">
-    <h1>Добро пожаловать в FaceBattle!</h1>
+    <h1>testДобро пожаловать в FaceBattle!</h1>
     <nav id="nav">
         <?php include 'nav.php' ?>
     </nav>
