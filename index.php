@@ -38,3 +38,11 @@ include 'header.php';
 		</ul>
 	</footer>
 </section>
+
+<br>
+<br>
+
+<form action="upload.php" method="post" enctype="multipart/form-data">
+    <input type="file" name="file" id="file">
+    <input type="submit" value="Загрузить" name="submit">
+

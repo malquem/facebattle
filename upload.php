@@ -3,24 +3,17 @@
 include 'header.php';
 ?>
 
-<div class="entry-content">
-	<h1>Загрузите свое фото</h1>
-<p> Селфи крупным планом!</p>
-
-	<form enctype="multipart/form-data" action="upload.php" method="POST">
-		<input type="hidden" name="MAX_FILE_SIZE" value="500">
-		Загрузить фото:
-		<input name="userfile" type="file">
-		<br>
-		<br>
-		<input type="submit" value="Отправить" />
-
-	</form>
-</div>
 
 <?php
-//echo '$_POST['userfile']';
-echo 'upload';
+
+
+$targetFile = 'uploads/' . basename($_FILES["file"]["name"]);
+
+if (move_uploaded_file($_FILES["file"]["tmp_name"], $targetFile)) {
+    //file was successfully uploaded
+    header("Location: http://localhost:63342/facebattle");
+}
+
+
+
 ?>
-
-
